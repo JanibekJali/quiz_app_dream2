@@ -10,6 +10,20 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Icon> ikonkalar = [];
   bool isFinished = false;
+  Widget containerBer() {
+    return Container(
+      color: Colors.yellow,
+      child: Text(
+        'SAlam',
+        style: TextStyle(fontSize: 50),
+      ),
+    );
+  }
+
+  bool peredachaAlam() {
+    return false;
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,6 +31,7 @@ class _HomePageState extends State<HomePage> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            containerBer(),
             isFinished == true
                 ?
                 //  Container(
